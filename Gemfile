@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'ransack', '~> 1.8'
+gem 'active_model_serializers', '~> 0.10.3'
 # Use whenever for fetching weather data from openweathermap
 gem 'whenever', require: false
 # Use faraday for requests to openweathermap API
