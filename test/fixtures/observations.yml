@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2016-12-19 01:54:41
+  temperature: 1
+  pressure: 1
+  humidity: 1
+
+two:
+  time: 2016-12-19 01:54:41
+  temperature: 1
+  pressure: 1
+  humidity: 1
