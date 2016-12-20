@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'doorkeeper', '~> 4.2'
+gem 'devise', '~> 4.2'
 gem 'ransack', '~> 1.8'
 gem 'active_model_serializers', '~> 0.10.3'
 # Use whenever for fetching weather data from openweathermap
