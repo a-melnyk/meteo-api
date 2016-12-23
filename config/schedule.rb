@@ -1,3 +1,3 @@
 every :hour do
-  runner 'Observation.fetch'
+  runner 'ObservationFetcherService.()'
 end
