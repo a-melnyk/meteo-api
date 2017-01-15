@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?APPID=ef7cbd3d32439b60e98da1c7dcafe669&id=2918204&units=metric
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.10.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sun, 15 Jan 2017 22:44:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '427'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?APPID=ef7cbd3d32439b60e98da1c7dcafe669&id=2918204&units=metric"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":11.02,"lat":47.48},"weather":[{"id":803,"main":"Clouds","description":"broken
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":-7,"pressure":1020,"humidity":100,"temp_min":-7,"temp_max":-7},"visibility":10000,"wind":{"speed":1},"clouds":{"all":75},"dt":1484517000,"sys":{"type":1,"id":5930,"message":0.1159,"country":"DE","sunrise":1484463496,"sunset":1484495613},"id":2918204,"name":"Grainau","cod":200}'
+    http_version: 
+  recorded_at: Sun, 15 Jan 2017 22:44:04 GMT
+recorded_with: VCR 3.0.3

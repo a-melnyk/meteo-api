@@ -43,6 +43,8 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.5'
+  gem 'vcr', '~> 3.0'
+  gem 'webmock', '~> 2.3'
 end
 
 group :development do

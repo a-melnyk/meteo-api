@@ -14,7 +14,7 @@ class ObservationFetcherService
       raise ActiveRecord::Rollback
     end
 
-    puts 'Error: ' + @errors.map { |k, v| v.map { |msg| "#{k.to_s.humanize} #{msg}" } }.flatten
+    puts 'Error: ' + @errors.map { |k, v| "#{k}: #{v}" }.to_s
     false
   end
 
@@ -55,7 +55,7 @@ class ObservationFetcherService
       ob.humidity = @response.body['main']['humidity']
     end
 
-    @errors[:observation_record] = observation.errors.messages
+    @errors[:observation_record] = observation.errors.messages unless observation.errors.messages.empty?
     observation.persisted?
   end
 end
