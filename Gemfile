@@ -45,6 +45,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.5'
   gem 'vcr', '~> 3.0'
   gem 'webmock', '~> 2.3'
+  gem 'factory_girl_rails', '~> 4.8'
 end
 
 group :development do
